@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
+		<link rel="stylesheet" href="assets/css/style.css"/>
+		<title>Validacija forme</title>
+	</head>
+	<body>
+            <div class="container register">
+                <div class="row">
+                        <div class="col-md-3 register-left">
+                            <form action="">
+                            <h3>Zdravo!</h3>
+                            <p>Vezba Regularni Izrazi!</p>
+                            <input type="submit" name="" value="Login"/><br/>
+                        </div>
+                        <div class="col-md-9 register-right">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <h3 class="register-heading">Create a bank account</h3>
+                                    <div class="row register-form">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="first-name" placeholder="First Name *" />
+                                                <p class="text-danger" id="first-name-error"></p>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="last-name" placeholder="Last Name *"  />
+                                                <p class="text-danger" id="last-name-error"></p>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="birth-date" placeholder="Birth Date (yyyy-mm-dd)" />
+                                                <p class="text-danger" id="birth-date-error"></p>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="jmbg"  placeholder="JMBG " />
+                                                <p class="text-danger" id="jmbg-error"></p>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="maxl">
+                                                    <label class="radio inline"> 
+                                                        <input type="radio" name="gender" value="male">
+                                                        <span> Male </span> 
+                                                    </label>
+                                                    <label class="radio inline"> 
+                                                        <input type="radio" name="gender" value="female">
+                                                        <span>Female </span> 
+                                                    </label>
+                                                    <label class="radio inline"> 
+                                                        <input type="radio" name="gender" value="other">
+                                                        <span>Other </span> 
+                                                    </label>
+                                                    <p class="text-danger" id="gender-error"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" id="credit-card" class="form-control" placeholder="Credit Card (0000-0000-0000-0000) *" value="" maxlength="19" />
+                                                <p class="text-danger" id="credit-card-error"></p>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" id="phone-number" name="txtEmpPhone" class="form-control" placeholder="06x/yyy-yyy(y)"  />
+                                                <p class="text-danger" id="phone-number-error"></p>
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control" id="account-type">
+                                                        <option class="hidden" value="0">Please choose your account type</option>
+                                                        <option value="CA">Checking account</option>
+                                                        <option value="SA">Savings account</option>
+                                                        <option value="IRA">Individual retairment account</option>
+                                                </select>
+                                                <p class="text-danger" id="account-type-error"></p>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="maxl">
+                                                    <label class="checkbox inline"> 
+                                                        <input type="checkbox" id="agreement" name="agreement" value="agree">
+                                                        <span> I Agree with terms and conditions </span> 
+                                                    </label>
+                                                
+                                                    <p class="text-danger" id="agreement-error"></p>
+                                                </div>
+                                            </div>
+                                            <input type="button" class="btnRegister" id="register" value="Register"/>
+                                        </div>
+                                        <div id="feedback">
+
+                                        </div>
+                                        <p class="text-info">* Prvih 7 cifara jmbg-a popuniti automatski, na osnovu datuma rodjenja,<br> nakon izlaska iz polja.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+            <script src="assets/js/main.js"></script>
+		</body>
+</html>
